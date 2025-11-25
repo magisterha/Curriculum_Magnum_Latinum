@@ -65,12 +65,17 @@ header h1 {
     letter-spacing: 1px;
 }
 
+/* Introducción */
 .intro {
     margin: 40px 0;
     font-size: 1.1rem;
-    max-width: 700px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.intro p {
+    margin-bottom: 20px; /* Separación entre párrafos */
 }
 
 .divider {
@@ -81,12 +86,19 @@ header h1 {
     width: 50%;
 }
 
-/* Grid de Fases */
+/* Grid de Fases y Tarjetas */
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-bottom: 50px;
+}
+
+/* Enlaces de Tarjetas */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .card {
@@ -95,7 +107,9 @@ header h1 {
     border-radius: 8px;
     background: white;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
+    transition: transform 0.2s, border-color 0.2s;
+    height: 100%; /* Para que todas las tarjetas midan lo mismo */
+    box-sizing: border-box;
 }
 
 .card:hover {
@@ -108,7 +122,65 @@ header h1 {
     color: var(--primary-color);
 }
 
-/* Botón de Acción */
+/* Sección de Preguntas Frecuentes (FAQ) */
+.faq-section {
+    margin: 60px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background-color: white;
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 0 8px 8px 0;
+}
+
+.faq-item h4 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+/* Sección del Mentor */
+.mentor-section {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.prof-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--primary-color);
+    margin-left: 5px;
+}
+
+.prof-link:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/* Llamada a la Acción */
 .cta-section {
     background-color: #eee;
     padding: 40px;
@@ -134,6 +206,48 @@ header h1 {
     background-color: #5a0016;
 }
 
+/* Estilos Específicos para Subpáginas (Plan de Estudios) */
+.syllabus {
+    margin: 40px 0;
+    text-align: left;
+}
+
+.syllabus-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.syllabus-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.col-year {
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 25%;
+    border-right: 1px solid #eee;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1a252f;
+}
+
+/* Pie de Página */
 footer {
     margin-top: 50px;
     font-size: 0.8rem;
