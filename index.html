@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Magnum Latinum</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="language-bar">
+        <button onclick="setLanguage('la')">Latina</button>
+        <button onclick="setLanguage('es')">Español</button>
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('zh')">繁體中文</button>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1 data-i18n="title">Curriculum Magnum Latinum</h1>
+            <p class="subtitle" data-i18n="subtitle">Arquitectura Cognitiva & Latín Clásico</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <p data-i18n="intro">Igual que el entrenamiento físico es la base de todo deporte, el Latín estructura la mente para la era de la Inteligencia Artificial. Siendo la raíz del vocabulario científico universal, este programa de 6 años no solo enseña un idioma, sino que 'muscula' la cognición para dominar la lógica compleja y los estudios superiores.</p>
+            </section>
+
+            <hr class="divider">
+
+            <section class="grid-layout">
+                <div class="card">
+                    <h3 data-i18n="phase1_title">Fase I: Fundamentos (12-14 años)</h3>
+                    <p data-i18n="phase1_desc">Adquisición natural mediante 'Lingua Latina Per Se Illustrata'. Construcción del sistema operativo mental.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="phase2_title">Fase II: Poder (14-16 años)</h3>
+                    <p data-i18n="phase2_desc">Lógica y Estrategia. Análisis profundo de César (De Bello Gallico), Salustio y la oratoria de Cicerón.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="phase3_title">Fase III: Humanitas (16-18 años)</h3>
+                    <p data-i18n="phase3_desc">Estética y Filosofía. Maestría de la Eneida de Virgilio, Poesía Lírica y Retórica avanzada.</p>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2 data-i18n="cta_title">¿Buscas la excelencia?</h2>
+                <p data-i18n="cta_desc">Las plazas son limitadas para garantizar la calidad de la mentoría.</p>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcEGs0k3eO1A3yDwwlRPZxM7RPpOPVD121J6GMUwAgbtbQ5w/viewform?usp=header" 
+                   target="_blank" 
+                   class="cta-button" 
+                   data-i18n="apply_button">
+                   Solicitar Admisión
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Curriculum Magnum Latinum. <span data-i18n="footer">Diseñado con Inteligencia Artificial.</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
